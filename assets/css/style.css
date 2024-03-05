@@ -1,0 +1,37 @@
+:root {
+      /* colors */
+      --color-blue-10: #092333; 
+      --color-blue-20: #014771; 
+      --color-blue-30: #0277BD; 
+      --color-blue-40: #3592CA; 
+      --color-blue-50: #C3EEEE;
+
+      --color-purple-10: #120624; 
+      --color-purple-20: #400A92; 
+      --color-purple-30: #6B11F4; 
+      --color-purple-40: #8941F6; 
+      --color-purple-50: #E2CFFF; 
+      
+      --color-red-10: #C03025; 
+      --color-red-20: #90241C; 
+      --color-red-30: #F03C2E; 
+      --color-red-40: #F36358; 
+      --color-red-50: #C3EEEE;
+      
+      /* fonts */
+      --font-primary: "IBM Plex Mono", monospace;
+      --font-secondary: "Inter", sans-serif;
+}
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      border: none;
+      outline: none;
+      text-decoration: none;
+}
+
+body {
+      font-family : var(--font-secondary);
+}
