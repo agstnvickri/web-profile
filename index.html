@@ -14,38 +14,75 @@
       <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-      <!-- header -->
-      <header>
-            <nav id="navbar">
-                  <div class="container-fluid">
-                        <a href="#" class="brand bold">V<span>C</span>K</a>
-                        <div class="menu">
-                              <a href="#" class="link">Home</a>
-                              <a href="#" class="link">About</a>
-                              <a href="#" class="link">Skill</a>
-                              <a href="#" class="link">Contact</a>
-                        </div>
-                        <a href="#" class="toggle">
-                              <i class="icon" data-feather="menu"></i>
+      <!-- navbar -->
+      <nav id="navbar">
+            <div class="wrapper">
+                  <a href="#" class="brand bold">VCK</a>
+                  <div class="menu text-center">
+                        <a href="#" class="menu-item link">Home</a>
+                        <a href="#about" class="menu-item link">About</a>
+                        <a href="#" class="menu-item link">Skill</a>
+                        <a href="#" class="menu-item link">Contact</a>
+                  </div>
+                  <div class="menu-toggle">
+                        <i data-feather="menu" class="menu-icon icon"></i>
+                  </div>
+            </div>
+      </nav>
+      <!-- hero -->
+      <div id="hero">
+            <div class="wrapper">
+                  <div class="display text-center">
+                        <img src="./assets/images/hero/1.png" alt="profile">
+                        <h1 class="headline bold">Iam Vickri Agustian</h1>
+                        <h4 class="subheadline bold">Frontend Engineer</h4>
+                  </div>
+                  <div class="footer">
+                        <a href="#" class="navigation">
+                              <i class="navigation-icon icon" data-feather="arrow-down-circle"></i>
                         </a>
                   </div>
-            </nav>
-            <div id="hero">
-                  <div class="container">
-                        <div class="content text-center">
-                              <img src="./assets/images/hero/1.png" alt="profile">
-                              <h1 class="headline bold">Iam Vickri Agustian</h1>
-                              <h4 class="subheadline">Frontend Engineer</h4>
-                              
+            </div>
+      </div>
+
+      <section id="about">
+            <div class="wrapper">
+                  <div class="display text-center">
+                        <h2 class="title">Who <span>Am</span> I</h2>
+                        <p class="text-body">Lorem ipsum dolor sit amet consectetur. Lacus nulla neque neque turpis feugiat habitant ullamcorper augue pretium. Diam ipsum adipiscing neque eget posuere eu ultrices. Adipiscing massa at malesuada nunc porttitor ultrices facilisi fermentum mattis. Mauris gravida faucibus placerat blandit diam est faucibus sapien. Mattis et nibh sem sed leo porttitor turpis.</p>
+                  </div>
+            </div>
+            <div class="wrapper">
+                  <div class="card-skill text-center">
+                        <h3 class="label">Basics</h3>
+                        <div class="card-img">
+                              <img src="./assets/images/skill/1.png" alt="html">
+                              <img src="./assets/images/skill/2.png" alt="css">
+                              <img src="./assets/images/skill/3.png" alt="js">
+                              <img src="./assets/images/skill/4.png" alt="sass">
                         </div>
-                        <div class="footer">
-                              <a href="#" class="link">
-                                    <i class="icon" data-feather="arrow-down-circle"></i>
-                              </a>
+                  </div>
+                  <div class="card-skill text-center">
+                        <h3 class="label">Framework</h3>
+                        <div class="card-img">
+                              <img src="./assets/images/skill/5.png" alt="bootsrap">
+                              <img src="./assets/images/skill/6.png" alt="tailwind">
+                              <img src="./assets/images/skill/7.png" alt="vue">
+                              <img src="./assets/images/skill/8.png" alt="react">
+                        </div>
+                  </div>
+                  <div class="card-skill text-center">
+                        <h3 class="label">Extras</h3>
+                        <div class="card-img">
+                              <img src="./assets/images/skill/9.png" alt="vite">
+                              <img src="./assets/images/skill/10.png" alt="webpack">
+                              <img src="./assets/images/skill/11.png" alt="git">
+                              <img src="./assets/images/skill/12.png" alt="github">
                         </div>
                   </div>
             </div>
-      </header>
+      </section>
+
 
       <!-- javascript -->
       <script>
