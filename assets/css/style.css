@@ -126,6 +126,8 @@ section .container {
       display: block;
       padding: 1rem;
 }
+.label,
+.form-label,
 .card-title,
 .title,
 .headline,
@@ -137,10 +139,13 @@ section .container {
 .subheadline {
       font-family: var(--font-third);
 }
+.label {
+      font-size: 1.125rem;
+      line-height: 180%;
+}
 .text-body {
       font-size: 1.125rem;
       opacity: .7;
-      line-height: 180%;
 }
 .extrabold {
       font-weight: 800;
@@ -160,6 +165,54 @@ section .container {
 .light {
       font-weight: 300;
 }
+.form {
+      border: 1px solid var(--color-blue-50);
+      border-radius: 1rem;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 2.5rem;
+}
+.form-group {
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+}
+.form-label {
+      font-size: 1.125rem;
+      color: var(--color-purple-30);
+      margin-bottom: 1rem;
+}
+.form-control {
+      border-radius: 0.3rem;
+      border: 1px solid var(--color-blue-50);
+      outline: none;
+      font-size: 1.125rem;
+      padding: 1rem;
+      transition-duration: .3s;
+}
+.btn {
+      cursor: pointer;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      flex: 1;
+      font-family: var(--font-primary);
+      font-size: 1.125rem;
+}
+.btn-primary {
+      box-shadow: 0 0 20px rgba(135,238,238, .25);
+      background: var(--color-red-30);
+      color:#fff;
+      transition-duration: .3s;
+}
+.form-control:focus {
+      outline: 1;
+      outline-color: var(--color-red-30);
+      border-color: var(--color-red-30);
+}
+.btn-primary:hover {
+      background: var(--color-red-10);
+}
 
 /* navbar */
 #navbar {
@@ -168,6 +221,7 @@ section .container {
       top: 0;
       left: 0;
       right: 0;
+      z-index: 999;
 }
 #navbar .wrapper {
       justify-content: space-between;
@@ -314,6 +368,54 @@ section#banner {
 #banner .title {
       color: #fff;
 }
+/* contact */
+#contact .map {
+      position: relative;
+      width: inherit;
+      height:28.125rem;
+      background-image: url(../images/contact/2.png);
+      background-size: cover;
+      background-position: center;
+}
+#contact .form {
+      max-width: 30.625rem;
+      width: inherit;
+      position: absolute;
+      top: 50%;
+      left: 70%;
+      transform: translate(-70%);
+      z-index: 998;
+}
+#contact .btn-contact {
+      display: flex;
+}
+/* footer */
+#footer {
+      margin-top: 12rem;
+}
+#footer .content {
+      width: inherit;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+#footer .label {
+      color: var(--color-blue-30);
+}
+#footer .navigation {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+}
+#footer .navigation-link .icon {
+      width: 1.5rem;
+      height: 1.5rem;
+      transition-duration: .3s;
+      color: var(--color-blue-10);
+}
+#footer .navigation-link:hover .icon {
+      color: var(--color-blue-30);
+}
 
 
 /* media queries */
@@ -321,7 +423,7 @@ section#banner {
 @media screen and (max-width: 1440px) {
       section .container,
       #navbar .container-fluid {
-            padding-inline: 7%;
+            padding-inline: 5%;
       }
 }
 /* layar tablet 768px */
@@ -346,11 +448,21 @@ section#banner {
             align-items: center;
             padding: 0.5rem;
       }
+      #contact .form {
+            max-width: 420px;
+      }
 }
 
 /* layer mobile phone 450px */
 @media screen and (max-width: 450px) {
       html {
-            font-size: 85%;
+            font-size: 75%;
+      }
+      #contact .form {
+            max-width: 350px;
+            width: 100%;
+            left: 50%;
+            transform: translate(-50%);
+
       }
 }
