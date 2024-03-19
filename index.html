@@ -14,32 +14,41 @@
       <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-      <!-- navbar -->
-      <nav id="navbar">
+<!-- navbar -->
+<nav id="navbar">
+      <div class="container-fluid">
             <div class="wrapper">
                   <a href="#" class="brand bold">VCK</a>
-                  <div class="menu text-center">
-                        <a href="#" class="menu-link link">Home</a>
-                        <a href="#" class="menu-link link">About</a>
-                        <a href="#" class="menu-link link">Skill</a>
-                        <a href="#" class="menu-link link">Contact</a>
-                  </div>
-                  <div class="menu-toggle" id="hamburger">
-                        <a href="#" class="menu-link">
-                              <i class="icon" data-feather="menu"></i>
-                        </a>
-                  </div>
+                  <ul class="navigation">
+                        <li>
+                              <a href="#" class="navigation-link">Home</a>
+                        </li>
+                        <li>
+                              <a href="#" class="navigation-link">About</a>
+                        </li>
+                        <li>
+                              <a href="#" class="navigation-link">Skill</a>
+                        </li>
+                        <li>
+                              <a href="#" class="navigation-link">Contact</a>
+                        </li>
+                  </ul>
+                  <a href="#" class="toggle">
+                        <i data-feather="menu" class="icon"></i>
+                  </a>
             </div>
-      </nav>
-      <!-- hero -->
-      <div id="hero">
+      </div>
+</nav>
+<!-- end navbar -->
+
+<!-- hero -->
+<section id="hero">
+      <div class="container">
             <div class="wrapper">
-                  <div class="content">
-                        <div class="display">
-                              <img src="./assets/images/hero/1.png" alt="profile">
-                              <h2 class="headline">Iam Vickri Agustian</h2>
-                              <h5 class="subheadline">Frontend Engineer</h5>
-                        </div>
+                  <div class="display">
+                        <img src="./assets/images/hero/1.png" alt="profile">
+                        <h2 class="headline bold">Iam Vickri Agustian</h2>
+                        <h5 class="subheadline bold">Frontend Engineer</h5>
                         <div class="navigation">
                               <a href="#" class="navigation-link">
                                     <i class="icon" data-feather="arrow-down-circle"></i>
@@ -48,46 +57,72 @@
                   </div>
             </div>
       </div>
-      <!-- about -->
-      <section id="about">
+</section>
+
+<!-- about -->
+<section id="about">
+      <div class="container">
             <div class="wrapper">
-                  <div class="display text-center">
-                        <h2 class="title">Who Am I ?</h2>
+                  <div class="introduction">
+                        <h2 class="title bold">Who Am I ?</h2>
                         <p class="text-body">Lorem ipsum dolor sit amet consectetur. Lacus nulla neque neque turpis feugiat habitant ullamcorper augue pretium. Diam ipsum adipiscing neque eget posuere eu ultrices. Adipiscing massa at malesuada nunc porttitor ultrices facilisi fermentum mattis. Mauris gravida faucibus placerat blandit diam est faucibus sapien. Mattis et nibh sem sed leo porttitor turpis.</p>
                   </div>
             </div>
             <div class="wrapper">
-                  <div class="card-skill">
-                        <h2 class="label">Basic</h2>
-                        <div class="card-image">
-                              <img src="./assets/images/skill/1.png" alt="html">
-                              <img src="./assets/images/skill/1.png" alt="html">
-                              <img src="./assets/images/skill/1.png" alt="html">
-                              <img src="./assets/images/skill/1.png" alt="html">
+                  <div class="skill">
+                        <div class="card">
+                              <h5 class="card-title semibold">Basic</h5>
+                              <div class="card-body">
+                                    <img src="./assets/images/skill/1.png" alt="html">
+                                    <img src="./assets/images/skill/2.png" alt="html">
+                                    <img src="./assets/images/skill/3.png" alt="html">
+                                    <img src="./assets/images/skill/4.png" alt="html">
+                              </div>
                         </div>
-                  </div>
-                  <div class="card-skill">
-                        <h2 class="label">Basic</h2>
-                        <div class="card-image">
-                              <img src="./assets/images/skill/1.png" alt="html">
-                              <img src="./assets/images/skill/1.png" alt="html">
-                              <img src="./assets/images/skill/1.png" alt="html">
-                              <img src="./assets/images/skill/1.png" alt="html">
+                        <div class="card">
+                              <h5 class="card-title semibold">Basic</h5>
+                              <div class="card-body">
+                                    <img src="./assets/images/skill/5.png" alt="html">
+                                    <img src="./assets/images/skill/6.png" alt="html">
+                                    <img src="./assets/images/skill/7.png" alt="html">
+                                    <img src="./assets/images/skill/8.png" alt="html">
+                              </div>
                         </div>
-                  </div>
-                  <div class="card-skill">
-                        <h2 class="label">Basic</h2>
-                        <div class="card-image">
-                              <img src="./assets/images/skill/1.png" alt="html">
-                              <img src="./assets/images/skill/1.png" alt="html">
-                              <img src="./assets/images/skill/1.png" alt="html">
-                              <img src="./assets/images/skill/1.png" alt="html">
+                        <div class="card">
+                              <h5 class="card-title semibold">Basic</h5>
+                              <div class="card-body">
+                                    <img src="./assets/images/skill/9.png" alt="html">
+                                    <img src="./assets/images/skill/10.png" alt="html">
+                                    <img src="./assets/images/skill/11.png" alt="html">
+                                    <img src="./assets/images/skill/12.png" alt="html">
+                              </div>
                         </div>
                   </div>
             </div>
-
-      </section>
-
+      </div>
+</section>
+<!-- banner -->
+<section id="banner">
+      <div class="container">
+            <div class="wrapper">
+                  <div class="display">
+                        <h2 class="title bold">Let's Connect With Me ?</h2>
+                        <div class="navigation">
+                              <a href="#" class="navigation-link">
+                                    <i data-feather="instagram" class="icon"></i>
+                              </a>
+                              <a href="#" class="navigation-link">
+                                    <i data-feather="github" class="icon"></i>
+                              </a>
+                              <a href="#" class="navigation-link">
+                                    <i data-feather="linkedin" class="icon"></i>
+                              </a>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</section>
+      
       <!-- javascript -->
       <script>
             feather.replace()
